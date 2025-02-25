@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    .column{
+        float: left;
+        width: 33.3%;
+        padding: 5px;
+    }
+    /* Clearfix (clear floats) */
+    .row::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: blue; text-align: center; background-size: 50%; ">Aligning images next to each other</h1>
+    <p>I want to learn how to align images next to each other on a html document using CSS float property.</p>
+    <div class="row">
+        <div class="column">
+            <img src="ball.jpg" alt="ball" style="width: 100%; height: 50%">
+        </div>
+        <div class="column">
+            <img src="racket.jpg" alt="racket" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="player.jpg" alt="player" style="width: 100%;">
+        </div>
+    </div>
+</body>
+</html>
